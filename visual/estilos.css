@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 150vh;
+    background: linear-gradient(1deg, #000000, #000000);
+}
+
+.exchange-board {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.6fr;
+    gap: 20px;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size:5em;
+    font-weight: bold;
+}
+
+.currency-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(44, 39, 39, 0.9);
+    align-items: center;
+    font-size: 1em;
+}
+
+.currency-name {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 6em; /* Aumenta el tamaño del texto de la divisa (por ejemplo, 'DOLAR') */
+    gap: 10px; /* Espacio entre la bandera y el texto */
+}
+
+.currency-flag {
+    width: 150px; /* Tamaño de la bandera */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+.rate-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 9em;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.rate-input:focus {
+    outline: none;
+}

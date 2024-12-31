@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizarra de Divisas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="exchange-board">
+        <div class="header">
+            <div>Divisa</div>
+            <div>Compra</div>
+            <div>Venta</div>
+        </div>
+        
+        <div class="currency-row">
+            <div class="currency-name">
+                <!-- Imagen de la bandera pequeña -->
+                <img src="usa-flag.webp" alt="Bandera de Estados Unidos" class="currency-flag">
+                us DOLAR
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+        </div>
+
+        <div class="currency-row">
+            <div class="currency-name">
+                <!-- Imagen de la bandera pequeña -->
+                <img src="euro.png" alt="Bandera de Estados Unidos" class="currency-flag">
+                eu  EURO
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+        </div>
+
+
+        <div class="currency-row">
+            <div class="currency-name">
+                <!-- Imagen de la bandera pequeña -->
+                <img src="brasil.webp" alt="Bandera de Estados Unidos" class="currency-flag">
+                brl REAL
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+            <div>
+                <input type="text" class="rate-input" value="000">
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        document.querySelectorAll('.rate-input').forEach(input => {
+            input.addEventListener('input', (e) => {
+                e.target.value = e.target.value.replace(/[^0-9]/g, '');
+            });
+        });
+    </script>
+</body>
+</html>
